@@ -149,7 +149,7 @@ class DocCommentSpacingSniffTest extends TestCase
 			DocCommentSpacingSniff::CODE_INCORRECT_ORDER_OF_ANNOTATIONS_IN_GROUP,
 		]);
 
-		self::assertSame(10, $report->getErrorCount());
+		self::assertSame(11, $report->getErrorCount());
 
 		self::assertSniffError($report, 12, DocCommentSpacingSniff::CODE_INCORRECT_ORDER_OF_ANNOTATIONS_GROUPS);
 		self::assertSniffError($report, 23, DocCommentSpacingSniff::CODE_INCORRECT_ANNOTATIONS_GROUP);
